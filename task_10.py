@@ -1,4 +1,4 @@
-def maxlist(num_list):
+def maxlist(num_list: list) -> int: 
     """
     Recursively finds the maximum element in a list of numbers.
 
