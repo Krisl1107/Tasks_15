@@ -1,13 +1,15 @@
 def function1_0(num: int, divisor: int) -> bool:
     """
-    Recursively checks whether 'num' is divisible by any number from 'divisor' up to sqrt(num).
+    Recursively checks whether 'num' is divisible by any number
+    from 'divisor' up to sqrt(num).
 
     Args:
         num (int): The number to test for divisibility.
         divisor (int): The current divisor being tested.
 
     Returns:
-        bool: True if 'num' is not divisible by any number from 'divisor' to sqrt(num), indicating 'num' is prime.
+        bool: True if 'num' is not divisible by any number from 'divisor' to sqrt(num),
+              indicating 'num' is prime.
               False if 'num' is divisible by 'divisor', indicating 'num' is composite.
     """
     if divisor > num ** 0.5:
@@ -35,9 +37,17 @@ def function1(num: int) -> int:
         return 1
     else:
         return 0
-    
-    
+
+
 def main():
+    """
+    Prompts the user for a number input, checks if 
+    the number is a positive integer, 
+    and determines whether it is a prime number using recursive functions.
+
+    Handles invalid inputs and recursion errors gracefully. 
+    Displays the result to the user.
+    """
     try:
         num_input = input("Enter number: ")
 
