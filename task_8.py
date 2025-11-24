@@ -8,9 +8,9 @@ def fib(num: int) -> int:
     Returns:
         int: The Fibonacci number at position 'num'.
     """
-    if num == 0:
+    if num <= 0:
         return 0
-    elif num == 1:
+    if num == 1:
         return 1
     else:
         return fib(num - 1) + fib(num - 2)
@@ -35,5 +35,7 @@ def main():
     except RecursionError:
         print("Recursion error occurred.")
 
+if __name__ == "__main__":
+    main()
 if __name__ == "__main__":
     main()
